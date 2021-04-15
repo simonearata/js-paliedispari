@@ -1,7 +1,7 @@
-console.log(palidroma("ciao"))
+console.log(palindroma("ciao"))
 
-//creare funzione per parola palidroma
-function palidroma (str){
+//creare funzione per parola palindroma
+function palindroma (str){
 
   //chiediamo all'utente una parola
   var parola_utente = prompt("Inserisci una parola")
@@ -11,12 +11,12 @@ function palidroma (str){
   con join ritrasformiamo l'array in una stringa */
   var parola = parola_utente.split("").reverse().join("");
 
-  //controlliamo se è palidroma
+  //controlliamo se è palindroma
   if(parola_utente === parola){
-    var output = "la parola è palidroma"
+    var output = "la parola è palindroma"
     return output;
   }else{
-    var output2 = "la parola non è palidroma"
+    var output2 = "la parola non è palindroma"
     return output2
   }
 }
